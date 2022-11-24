@@ -98,15 +98,14 @@ CREATE TABLE IF NOT EXISTS `category` (
 --
 
 INSERT INTO `category` (`id`, `name`) VALUES
-(2, 'Electronics'),
-(3, 'Mens'),
-(4, 'Women'),
-(5, 'Households'),
-(6, 'Stationery'),
-(7, 'Footwears'),
-(8, 'Furnitures');
+(2, 'Tennis'),
+(3, 'Cricket'),
+(4, 'Baseball'),
+(5, 'Golf'),
+(6, 'Basketball');
 
--- --------------------------------------------------------
+-----------------------------------------------------------
+
 
 --
 -- Table structure for table `customer`
@@ -126,7 +125,10 @@ CREATE TABLE IF NOT EXISTS `customer` (
 --
 
 INSERT INTO `customer` (`c_id`, `c_session`, `c_name`, `c_email`, `c_pass`, `c_image`) VALUES
-(7, 'sgc31ii06pfn3o38q25ic07bk7', 'Rahul Agarwal', 'rahulmma.ra@gmail.com', 'rahul', 'rahul.jpg');
+(7, 'md4bei5fpg0dmga16sqn4o08gj', 'Rahul Agarwal', 'rahulmma.ra@gmail.com', 'rahul', 'rahul.jpg'),
+(8, 'md4bei5fpg0dmga16sqn4o08gj', 'yamini', 'chitikelay1@montclair.edu', 'Pushpaganesh@1', 'default.png');
+
+
 
 -- --------------------------------------------------------
 
@@ -268,15 +270,16 @@ CREATE TABLE IF NOT EXISTS `sub_category` (
 -- Dumping data for table `sub_category`
 --
 
+
 INSERT INTO `sub_category` (`id`, `cat_id`, `name`) VALUES
-(1, 2, 'Smartphone'),
-(2, 3, 'Casual Shirts'),
-(4, 2, 'Laptops'),
-(6, 2, 'Cameras'),
-(7, 3, 'T-shirt'),
-(8, 4, 'Tops'),
+(1, 2, 'Bags'),
+(2, 3, 'bats'),
+(4, 2, 'Racquets'),
+(6, 2, 'Balls'),
+(7, 3, 'Ball'),
+(8, 4, 'Cricket bats'),
 (9, 3, 'Jeans'),
-(11, 4, 'Skirts'),
+(11, 4, 'Accessories'),
 (12, 3, 'Blazers');
 
 -- --------------------------------------------------------
